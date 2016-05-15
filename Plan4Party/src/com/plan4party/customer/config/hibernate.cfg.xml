@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+    <!-- Related to the connection START -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/p4p</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Rohan@1904</property>
+    <!-- Related to the connection END -->
+        
+    <!-- Related to hibernate properties START -->
+		<property name="show_sql">true </property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hbm2ddl.auto">update </property>
+		<property name="hibernate.default_schema">p4p</property>
+	<!-- Related to hibernate properties END -->
+        
+        
+    <!-- Related to mapping START -->
+		<mapping resource="com/plan4party/customer/config/TestPojo.hbm.xml" />
+	<!-- Related to the mapping END -->
+        
+    </session-factory>
+</hibernate-configuration>

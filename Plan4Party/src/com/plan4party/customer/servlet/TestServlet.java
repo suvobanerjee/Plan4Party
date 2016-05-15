@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.plan4party.customer.dao.TestDao;
+import com.plan4party.customer.pojo.TestPojo;
+
 /**
  * Servlet implementation class TestServlet
  */
@@ -39,6 +42,13 @@ public class TestServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 		String data=request.getParameter("text1");
+		
+		TestPojo testPojo=new TestPojo();
+		testPojo.setName(data);
+		
+		TestDao testDao=new TestDao();
+		testDao.add(testPojo);
+		
 		
 		PrintWriter out=response.getWriter();
 		

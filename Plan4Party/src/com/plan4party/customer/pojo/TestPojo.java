@@ -17,6 +17,5 @@ public class TestPojo {
 		this.name = name;
 	}
 	
-	
 
 }
