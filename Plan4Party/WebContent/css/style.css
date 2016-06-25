@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+padding: 0px;
+width: 100%; 
+height: 100%;
+margin: auto;
+font-family: Arial;
+}
+#header{
+border: 1px solid black;
+width: 100%;
+height: 120px;
+background: purple;
+text-align: center;
+}
+
+#wrapper{
+width: 100%;
+height: auto;
+border: 1px solid black;
+margin: 0px auto;
+}
+
+#main{
+border: 1px solid black;
+height: 300px;
+
+}
+
+#footer{
+height: 50px;
+text-align: right ;
+font-size: 14px;
+background: purple;
+}
+
+#wrapper#main img{
+	width:800px;
+	height:300px;
+}
+
+#header #nav{
+font-size: 16px;
+margin-top: -5px;
+}
+
+#header #nav ul li
+{
+list-style-type: none;
+display: inline;
+padding: 3px 8px 3px 8px;
+font-size: 21px; 
+background-color: purple;
+font-family: pristina;
+}
+
+#header #nav a{
+text-decoration: none;
+color: white;
+}
+
+#header #nav a:hover{
+color: black;
+}
+
+#header #nav a:visited{
+color: white;
+}
+
+#header #nav a:active{
+color: white;
+}
+
+#header #logo img{
+margin-top: 20px;
+margin-left: -750px;
+}
