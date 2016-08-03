@@ -21,7 +21,8 @@
         
         
     <!-- Related to mapping START -->
-		<mapping resource="com/plan4party/customer/config/TestPojo.hbm.xml" />
+		<!-- <mapping resource="com/plan4party/customer/config/TestPojo.hbm.xml" /> -->
+		<mapping resource="com/plan4party/vendor/pojo/Customer_request.hbm.xml" />
 	<!-- Related to the mapping END -->
         
     </session-factory>

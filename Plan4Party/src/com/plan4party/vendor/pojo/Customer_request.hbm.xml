@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13 Jul, 2016 9:41:35 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.plan4party.vendor.pojo.Customer_request" table="customer_req_event">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="eventId" type="int">
+            <column name="event_id" />
+        </property>
+        <property name="customerRegId" type="int">
+            <column name="customer_reg_id" />
+        </property>
+        <property name="contactVia" type="int">
+            <column name="contact_via" />
+        </property>
+        <property name="vendorId" type="int">
+            <column name="vendor_id" />
+        </property>
+        <property name="createdOn" type="java.sql.Timestamp">
+            <column name="created_on" />
+        </property>
+    </class>
+</hibernate-mapping>
